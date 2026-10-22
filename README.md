@@ -2,15 +2,13 @@
 
 A one-page landing site on **Render** (a static site), with pull request previews **public**.
 Static Vite + TypeScript, no framework. The page reads a live list from the shared Supabase test
-project. Row in the support matrix: REN-<row 14> (Linear, project Onboarding evals).
+project. Row in the support matrix: REN-1098 (Linear, project Onboarding evals).
 
 ## Deployment links
 
-Filled in at prep time.
-
 | Production | Preview gate |
 |---|---|
-| _not deployed_ | no |
+| https://cobalt-heron-r7t2.onrender.com (Render static site `srv-dbcuqc7b9u1s73cvlc0g`) | no |
 
 ## Names
 
@@ -44,7 +42,7 @@ or Render can't build the repository or its pull requests.
    notice at the top, and push that to `main`.
 
 A pull request's preview is its own static site, `https://<name>-pr-<n>.onrender.com`, public like
-production. Render reports it on the PR as a GitHub deployment and a comment.
+production. Render reports it on GitHub only as a deployment: environment `<branch> - <name> PR #<n>`, created as the account that installed Render's GitHub app (abdulwahabone), status `success` with that URL. No comment, check run or commit status (seen 2026-10-22). The preview site is removed when the PR closes.
 
 ## Supabase
 
